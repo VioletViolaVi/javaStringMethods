@@ -6,9 +6,30 @@ public class StringMethods {
 
         System.out.println("\n");
 
-        String original = "Can you feel it? Can you feel the love! Nothing feels better than fellin' the love! Everybody knows that when push comes to shove! Nothing feels better than feelin' the love!";
-        System.out.println(original);
-        String changed = original.replace("love", "pie").replace("shove", "fly");
+        String song = "Can you feel it? Can you feel the love! Nothing feels better than fellin' the love! Everybody knows that when push comes to shove! Nothing feels better than feelin' the love!";
+        System.out.println(song);
+        String changed = song.replace("love", "pie").replace("shove", "fly");
         System.out.println(changed);
+
+        System.out.println("\n");
+
+        String weather = "      The weather outside is sunny.      ";
+        System.out.println(weather);
+        String trimmed = weather.trim();
+        System.out.println(trimmed);
+
+        System.out.println("\n");
+
+        String question = "Why are you reading this? ";
+        System.out.println(question);
+        int lastWord = question.lastIndexOf("this?");
+        System.out.println(lastWord);
+
+        System.out.println("\n");
+
+        String shouting = "Come Back! ";
+        System.out.println(shouting);
+        String repeated = shouting.repeat(3);
+        System.out.println(repeated);
     }
 }
